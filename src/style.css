@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0f172a;
+        color: #e2e8f0;
+      }
+
+      .logo-text {
+        background: linear-gradient(to right, #4ade80, #3b82f6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 700;
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(to right, #4ade80, #3b82f6);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .image-scroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .image-scroll::-webkit-scrollbar {
+        display: none;
+      }
+
+      .btn-gradient {
+        background: linear-gradient(to right, #4ade80, #3b82f6);
+        transition: all 0.3s ease;
+      }
+
+      .btn-gradient:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+      }
+
+      .animate-pulse {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .hero-background {
+        background-image: url("/api/placeholder/1200/600");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .hero-background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(15, 23, 42, 0.7),
+          rgba(15, 23, 42, 0.9)
+        );
+      }
+
+      .featured-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+      }
+
+      footer {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(10px);
+      }
