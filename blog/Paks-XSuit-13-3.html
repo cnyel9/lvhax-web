@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LvHAX - Paks XSuit</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/img/profile.png">
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font/3.9.0/font.css"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-lg border-b border-gray-800"
+    >
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <a href="index.html" class="flex items-center">
+              <span class="text-2xl logo-text">LvHAX</span>
+            </a>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="/index.html" class="nav-link hover:text-blue-400 transition"
+              ><i class="fas fa-home mr-1"></i> Home</a
+            >
+            <a href="/blog/all-blog/all-blog.html" class="nav-link hover:text-blue-400 transition"
+              ><i class="fas fa-newspaper mr-1"></i> Blog</a
+            >
+            <a href="/tentang.html" class="nav-link hover:text-blue-400 transition"
+              ><i class="fas fa-info-circle mr-1"></i> Tentang</a
+            >
+            <a href="/kontak.html" class="nav-link hover:text-blue-400 transition"
+              ><i class="fas fa-envelope mr-1"></i> Kontak</a
+            >
+          </div>
+
+          <!-- Search Bar -->
+          <div class="hidden md:block">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Cari..."
+                class="bg-gray-800 rounded-full py-2 px-4 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-64"
+              />
+              <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+          <div class="flex flex-col space-y-3">
+            <a href="/index.html" class="hover:text-blue-400 transition"
+              ><i class="fas fa-home mr-1"></i> Home</a
+            >
+            <a href="/blog/all-blog/all-blog.html" class="hover:text-blue-400 transition"
+              ><i class="fas fa-newspaper mr-1"></i> Blog</a
+            >
+            <a href="/tentang.html" class="hover:text-blue-400 transition"
+              ><i class="fas fa-info-circle mr-1"></i> Tentang</a
+            >
+            <a href="/kontak.html" class="hover:text-blue-400 transition"
+              ><i class="fas fa-envelope mr-1"></i> Kontak</a
+            >
+          </div>
+          <div class="mt-4">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Cari..."
+                class="bg-gray-800 rounded-full py-2 px-4 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+              />
+              <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <div class=" md:p-8">
+          <div class="flex items-center text-sm text-gray-400 mb-4">
+            <a href="index.html" class="hover:text-blue-400">Home</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <a href="#" class="hover:text-blue-400">Battle Royale</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <span>PUBG Mobile</span>
+          </div>
+
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">
+            X-SUIT FULL VIP - PUBGM 3.7
+          </h1>
+
+          <div class="flex flex-wrap items-center gap-4 mb-6">
+            <div class="flex items-center">
+              <img
+                src="/img/profile.png"
+                alt="Admin"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="ml-3">
+                <p class="font-medium">Admin</p>
+                <p class="text-xs text-gray-500">LvHAX</p>
+              </div>
+            </div>
+
+            <div class="flex items-center text-sm text-gray-400">
+              <i class="far fa-clock mr-2"></i>
+              <span>March 13, 2025</span>
+            </div>
+
+            <div class="flex items-center text-sm text-gray-400">
+              <i class="far fa-eye mr-2"></i>
+              <span>0 views</span>
+            </div>
+
+            <div class="flex items-center text-sm text-green-500">
+              <i class="fas fa-shield-alt mr-2"></i>
+              <span>Verified Safe</span>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-800 pt-6">
+            <div class="flex flex-wrap gap-3 mb-4">
+              <span
+                class="bg-blue-900 px-3 py-1 rounded-full text-xs font-medium"
+                >PUBG Mobile</span
+              >
+              <span
+                class="bg-green-900 px-3 py-1 rounded-full text-xs font-medium"
+                >HACK SKIN</span
+              >
+              <span
+                class="bg-red-900 px-3 py-1 rounded-full text-xs font-medium"
+                >DATA</span
+              >
+              <span
+                class="bg-purple-900 px-3 py-1 rounded-full text-xs font-medium"
+                >ANTI BAN</span
+              >
+            </div>
+
+            <!-- <p class="text-gray-300 leading-relaxed">
+                We've just released our latest version of the PUBG Mobile ESP
+                Hack with significant improvements and anti-detection measures.
+                This version is confirmed working on the latest PUBG Mobile
+                update.
+              </p>
+              <p class="text-gray-300 leading-relaxed mt-4">
+                Our PUBG Mobile ESP Hack v4.3 comes with enhanced features
+                designed to give you the competitive edge while maintaining
+                undetectable status. We've completely rewritten the core engine
+                to bypass the latest security measures implemented in the game.
+              </p> -->
+
+            <!-- Screenshot Gallery -->
+            <div class="my-8">
+              <h3 class="text-xl font-bold mb-4">Screenshots</h3>
+              <div class="image-scroll flex gap-4 overflow-x-auto pb-4">
+                <img
+                  src="/img/paksxsuit/paksxsuit1.jpg"
+                  alt="PUBG Hack Screenshot 1"
+                  class="rounded-lg min-w-[300px] object-cover"
+                />
+                <img
+                  src="/img/paksxsuit/paksxsuit2.jpg"
+                  alt="PUBG Hack Screenshot 2"
+                  class="rounded-lg min-w-[300px] object-cover"
+                />
+                <img
+                  src="/img/paksxsuit/paksxsuit3.jpg"
+                  alt="PUBG Hack Screenshot 3"
+                  class="rounded-lg min-w-[300px] object-cover"
+                />
+                <img
+                  src="/img/paksxsuit/paksxsuit5.jpg"
+                  alt="PUBG Hack Screenshot 3"
+                  class="rounded-lg min-w-[300px] object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="mb-8">
+              <h3 class="text-xl font-bold mb-4">Fitur</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg flex">
+                  <div class="text-green-500 mr-3">
+                    <i class="fas fa-check-circle text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Bundle Skin</h4>
+                    <p class="text-sm text-gray-400">
+                      X-Suit Full MAX VIP.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-gray-800 p-4 rounded-lg flex">
+                  <div class="text-green-500 mr-3">
+                    <i class="fas fa-check-circle text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">
+                      Penambahan Effect
+                    </h4>
+                    <p class="text-sm text-gray-400">
+                      Ada 50 penambahan Kill Message dan helmet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download Section -->
+            <div class="mb-8 rounded-full">
+              <h3 class="text-xl font-bold mb-4">Link Download</h3>
+              <div class="space-y-4">
+                <div class="bg-gray-800 p-5">
+                  <div
+                    class="flex flex-col md:flex-row justify-between items-center"
+                  >
+                    <div class="mb-4 md:mb-0">
+                      <h4 class="font-bold text-lg">X-SUIT FULL VIP PUBGM 3.7</h4>
+                      <p class="text-sm text-gray-400">
+                        Versi terbaru dengan perlindungan anti-larangan
+                      </p>
+                      <div class="flex items-center mt-2 text-sm">
+                        <span class="mr-4">
+                          <i class="fas fa-file-archive text-blue-400 mr-1"></i>
+                           19.58 MB
+                        </span>
+                        <span>
+                          <i class="fas fa-download text-green-400 mr-1"></i>
+                          0 Downloads
+                        </span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://sfl.gl/xt84QC1"
+                      class="btn-gradient px-6 py-3 rounded-lg font-semibold flex items-center"
+                    >
+                      <i class="fas fa-download mr-2"></i> Download
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+<!--                 <div class="bg-gray-800 p-5">
+  <div
+    class="flex flex-col md:flex-row justify-between items-center"
+  >
+    <div class="mb-4 md:mb-0">
+      <h4 class="font-bold text-lg">PELENGKAP DATA PUBGM 3.7</h4>
+      <p class="text-sm text-gray-400">
+        Versi terbaru dengan perlindungan anti-larangan
+      </p>
+      <div class="flex items-center mt-2 text-sm">
+        <span class="mr-4">
+          <i class="fas fa-file-archive text-blue-400 mr-1"></i>
+          19.58 MB
+        </span>
+        <span>
+          <i class="fas fa-download text-green-400 mr-1"></i>
+          0 Downloads
+        </span>
+      </div>
+    </div>
+    <a
+      href="https://sfl.gl/WVef"
+      class="btn-gradient px-6 py-3 rounded-lg font-semibold flex items-center"
+    >
+      <i class="fas fa-download mr-2"></i> Download
+    </a>
+  </div>
+</div>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="/src/script.js"></script>
+  </body>
+</html>
